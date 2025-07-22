@@ -2,141 +2,145 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla Interactiva con Créditos</title>
+  <title>Malla Interactiva Horizontal</title>
   <style>
     body {
-      font-family: sans-serif;
       margin: 20px;
+      font-family: sans-serif;
       background: #f5f5f5;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
     }
+
     .semestre {
+      display: inline-block;
+      vertical-align: top;
       background: white;
-      padding: 10px 15px;
-      margin-bottom: 20px;
-      border-left: 5px solid #007acc;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-right: 20px;
+      padding: 10px;
+      min-width: 200px;
+      border-radius: 6px;
+      border-left: 4px solid #007acc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     .titulo {
       font-weight: bold;
-      font-size: 18px;
-      color: #007acc;
+      font-size: 16px;
       margin-bottom: 10px;
+      color: #007acc;
+      text-align: center;
     }
+
     .curso {
-      margin: 5px 0;
-      padding: 8px;
-      background: #eef;
-      border-radius: 5px;
-    }
-    .curso.aprobado {
-      background: #d4edda;
-    }
-    .curso.desaprobado {
-      background: #f8d7da;
-    }
-    .creditos {
+      background: #e6f0ff;
+      margin: 6px 0;
+      padding: 6px;
+      border-radius: 4px;
       font-size: 14px;
-      color: #555;
     }
-    .requisitos {
+
+    .curso.aprobado { background-color: #d4edda; }
+    .curso.desaprobado { background-color: #f8d7da; }
+
+    .creditos {
+      color: #333;
       font-size: 12px;
+    }
+
+    .requisitos {
       color: #777;
-      margin-left: 10px;
+      font-size: 11px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>Malla Curricular Interactiva</h1>
+  <h2 style="margin-left: 10px;">Malla Curricular Interactiva</h2>
   <div id="malla"></div>
 
   <script>
-    let estadoCursos = {}; // estado: aprobado/desaprobado
+    let estadoCursos = {};
 
     function renderMalla(data) {
       const malla = document.getElementById("malla");
       const materiasPorId = {};
 
-      // Indexar materias por id
-      data.mallaData.forEach(bloque => {
-        bloque.materias.forEach(m => {
-          materiasPorId[m.id] = m;
-        });
+      // Indexar materias
+      data.mallaData.forEach(b => {
+        b.materias.forEach(m => materiasPorId[m.id] = m);
       });
 
       data.mallaData.forEach(bloque => {
-        if (!bloque.materias || bloque.materias.length === 0) return;
+        if (!bloque.materias.length) return;
 
-        const div = document.createElement("div");
-        div.className = "semestre";
+        const col = document.createElement("div");
+        col.className = "semestre";
 
         const titulo = document.createElement("div");
         titulo.className = "titulo";
         titulo.textContent = `Año ${bloque.año} - ${bloque.periodo}`;
-        div.appendChild(titulo);
+        col.appendChild(titulo);
 
-        bloque.materias.forEach(materia => {
+        bloque.materias.forEach(m => {
           const curso = document.createElement("div");
           curso.className = "curso";
-          curso.id = materia.id;
+          curso.id = m.id;
 
           const check = document.createElement("input");
           check.type = "checkbox";
           check.addEventListener("change", () => {
-            estadoCursos[materia.id] = check.checked;
-            actualizarEstilos();
+            estadoCursos[m.id] = check.checked;
+            actualizar();
           });
 
           const nombre = document.createElement("span");
-          nombre.innerHTML = ` ${materia.nombre} <span class="creditos">(${materia.creditos} créditos)</span>`;
+          nombre.innerHTML = `${m.nombre} <span class="creditos">(${m.creditos} cr)</span>`;
 
           curso.appendChild(check);
           curso.appendChild(nombre);
 
-          if (materia.requisitos.length > 0) {
+          if (m.requisitos?.length) {
             const requisitos = document.createElement("div");
             requisitos.className = "requisitos";
-            const nombresReq = materia.requisitos.map(id => materiasPorId[id]?.nombre || "(?)");
-            requisitos.textContent = "Requiere: " + nombresReq.join(", ");
+            const reqNames = m.requisitos.map(rid => materiasPorId[rid]?.nombre || "(?)");
+            requisitos.textContent = "Req: " + reqNames.join(", ");
             curso.appendChild(requisitos);
           }
 
-          div.appendChild(curso);
+          col.appendChild(curso);
         });
 
-        malla.appendChild(div);
+        malla.appendChild(col);
       });
 
-      function actualizarEstilos() {
-        Object.keys(materiasPorId).forEach(id => {
-          const materia = materiasPorId[id];
-          const cursoEl = document.getElementById(id);
-          if (!cursoEl) return;
+      function actualizar() {
+        Object.values(materiasPorId).forEach(m => {
+          const el = document.getElementById(m.id);
+          if (!el) return;
+          el.classList.remove("aprobado", "desaprobado");
 
-          cursoEl.classList.remove("aprobado", "desaprobado");
+          const aprobado = estadoCursos[m.id] === true;
+          const requisitosOK = (m.requisitos || []).every(id => estadoCursos[id]);
 
-          const aprobado = estadoCursos[id] === true;
-          const requisitos = materia.requisitos || [];
+          el.style.opacity = requisitosOK ? "1" : "0.4";
 
-          const requisitosCumplidos = requisitos.every(rid => estadoCursos[rid] === true);
-
-          if (!requisitosCumplidos) {
-            cursoEl.style.opacity = 0.4;
-          } else {
-            cursoEl.style.opacity = 1.0;
-          }
-
-          if (aprobado) cursoEl.classList.add("aprobado");
-          else if (estadoCursos[id] === false) cursoEl.classList.add("desaprobado");
+          if (aprobado) el.classList.add("aprobado");
+          else if (estadoCursos[m.id] === false) el.classList.add("desaprobado");
         });
       }
     }
 
     fetch("malla.json")
       .then(r => r.json())
-      .then(data => renderMalla(data))
-      .catch(err => {
-        document.getElementById("malla").textContent = "Error al cargar malla.json";
-        console.error(err);
+      .then(json => renderMalla(json))
+      .catch(e => {
+        document.getElementById("malla").innerText = "Error cargando malla.json";
+        console.error(e);
       });
   </script>
 </body>
