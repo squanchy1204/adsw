@@ -1,0 +1,790 @@
+{
+  "mallaData": [
+    {
+      "año": 1,
+      "periodo": "anual",
+      "materias": []
+    },
+    {
+      "año": 1,
+      "periodo": "Semestre 1",
+      "materias": [
+        {
+          "id": "0aaa9e97-e359-4e79-bef3-962fa6a4e384",
+          "nombre": "eco 1",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "c433e524-2cee-40e8-a76d-1dd742d6d06a",
+          "nombre": "mate 1",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "8b4158ad-d698-4aa5-841a-136422c27010",
+          "nombre": "leng",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "6ae15f47-fe41-44f3-8d61-f997918d3690",
+          "nombre": "dp",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "56c41fe6-c3d8-40df-b65e-60c333faec09",
+          "nombre": "ingles1",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 2,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "909e26ac-2e1d-4e69-adfa-a0b4e5541cac",
+          "nombre": "meu",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "a253f8eb-0d65-4228-af3c-3fe2d3a761db",
+          "nombre": "filo",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 1,
+      "periodo": "Semestre 2",
+      "materias": [
+        {
+          "id": "e4ff44a7-12cc-4f9a-9787-dbb3b99dd444",
+          "nombre": "mate 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "c433e524-2cee-40e8-a76d-1dd742d6d06a"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "b243d54e-3917-40aa-aac0-0ad47383b3e3",
+          "nombre": "eco 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "0aaa9e97-e359-4e79-bef3-962fa6a4e384"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "3ab45af9-ffa3-4571-b94c-17380cf083f4",
+          "nombre": "relaidad",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 1,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "95bd9138-03db-4d07-8d24-63b44dae68ed",
+          "nombre": "leng 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "8b4158ad-d698-4aa5-841a-136422c27010"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "275454a6-09dc-4bcb-8456-34bc5d899f67",
+          "nombre": "ingles",
+          "tipo": "ninguno",
+          "requisitos": [
+            "56c41fe6-c3d8-40df-b65e-60c333faec09"
+          ],
+          "creditos": 2,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "4de6597a-81a4-4512-aec7-e0110877aef9",
+          "nombre": "chuchon",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 2,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "426caebd-f3d1-46e4-a347-2945d2d470c9",
+          "nombre": "investigacion",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 2,
+      "periodo": "anual",
+      "materias": []
+    },
+    {
+      "año": 2,
+      "periodo": "Semestre 1",
+      "materias": [
+        {
+          "id": "a79dffce-abbe-417d-b73e-73d3a55622b9",
+          "nombre": "micro 1",
+          "tipo": "ninguno",
+          "requisitos": [
+            "0aaa9e97-e359-4e79-bef3-962fa6a4e384",
+            "e4ff44a7-12cc-4f9a-9787-dbb3b99dd444"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "399515bc-48f4-4382-8b75-3845fe9e43fe",
+          "nombre": "macro 1",
+          "tipo": "ninguno",
+          "requisitos": [
+            "b243d54e-3917-40aa-aac0-0ad47383b3e3",
+            "e4ff44a7-12cc-4f9a-9787-dbb3b99dd444"
+          ],
+          "creditos": 8,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "5cd482f6-22cd-4297-b37d-2f09f24147ee",
+          "nombre": "cuentas",
+          "tipo": "ninguno",
+          "requisitos": [
+            "c433e524-2cee-40e8-a76d-1dd742d6d06a",
+            "b243d54e-3917-40aa-aac0-0ad47383b3e3"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "d8a96c36-2e18-441b-8d19-ff4044e620f4",
+          "nombre": "mate 3",
+          "tipo": "ninguno",
+          "requisitos": [
+            "e4ff44a7-12cc-4f9a-9787-dbb3b99dd444"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "70a6a8a2-df3a-41bc-a606-963a88a74912",
+          "nombre": "estadistica",
+          "tipo": "ninguno",
+          "requisitos": [
+            "e4ff44a7-12cc-4f9a-9787-dbb3b99dd444"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "80deca32-edeb-4eaa-b830-6fafccc8c959",
+          "nombre": "contafi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "0aaa9e97-e359-4e79-bef3-962fa6a4e384"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 2,
+      "periodo": "Semestre 2",
+      "materias": [
+        {
+          "id": "2d1a2e19-94c8-489f-b4ae-228df19e8d89",
+          "nombre": "micro 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "a79dffce-abbe-417d-b73e-73d3a55622b9",
+            "d8a96c36-2e18-441b-8d19-ff4044e620f4"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "2f689255-2a83-48b7-991f-e719b574daf5",
+          "nombre": "macro 2 ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "5cd482f6-22cd-4297-b37d-2f09f24147ee",
+            "399515bc-48f4-4382-8b75-3845fe9e43fe",
+            "d8a96c36-2e18-441b-8d19-ff4044e620f4"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "9cf611c5-9abe-4697-a195-fdc7f66242a5",
+          "nombre": "analisis",
+          "tipo": "ninguno",
+          "requisitos": [
+            "a79dffce-abbe-417d-b73e-73d3a55622b9",
+            "399515bc-48f4-4382-8b75-3845fe9e43fe"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "aec6ceba-ca38-4d1c-843d-49379710a550",
+          "nombre": "mate 4",
+          "tipo": "ninguno",
+          "requisitos": [
+            "d8a96c36-2e18-441b-8d19-ff4044e620f4"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "5357538f-96f9-417d-8366-4b5e66a94686",
+          "nombre": "estadistica 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "d8a96c36-2e18-441b-8d19-ff4044e620f4",
+            "70a6a8a2-df3a-41bc-a606-963a88a74912"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "bd454e89-43cd-4353-b932-dfd4b3505769",
+          "nombre": "costos",
+          "tipo": "ninguno",
+          "requisitos": [
+            "80deca32-edeb-4eaa-b830-6fafccc8c959"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 3,
+      "periodo": "anual",
+      "materias": []
+    },
+    {
+      "año": 3,
+      "periodo": "Semestre 1",
+      "materias": [
+        {
+          "id": "286db895-f3b2-4adf-8885-cceaf814b41b",
+          "nombre": "micro 3",
+          "tipo": "ninguno",
+          "requisitos": [
+            "2d1a2e19-94c8-489f-b4ae-228df19e8d89",
+            "aec6ceba-ca38-4d1c-843d-49379710a550"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "ea0b427a-0b92-402e-a78d-92a04a31ce1c",
+          "nombre": "macro 3",
+          "tipo": "ninguno",
+          "requisitos": [
+            "2f689255-2a83-48b7-991f-e719b574daf5",
+            "aec6ceba-ca38-4d1c-843d-49379710a550"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "fddefaca-7bbb-447b-8bd6-279a0389ab81",
+          "nombre": "eco polt 1 ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "9cf611c5-9abe-4697-a195-fdc7f66242a5"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "174977cf-ce5e-4e4d-ad2a-553b57539a00",
+          "nombre": "informatica",
+          "tipo": "ninguno",
+          "requisitos": [
+            "aec6ceba-ca38-4d1c-843d-49379710a550",
+            "5357538f-96f9-417d-8366-4b5e66a94686"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "7dbb4951-f2fd-4bc9-b846-8befd3cc1762",
+          "nombre": "historia ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "9cf611c5-9abe-4697-a195-fdc7f66242a5"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "e45661f0-7543-43ea-822b-5d589e3b4703",
+          "nombre": "matefi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "d8a96c36-2e18-441b-8d19-ff4044e620f4",
+            "bd454e89-43cd-4353-b932-dfd4b3505769"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 3,
+      "periodo": "Semestre 2",
+      "materias": [
+        {
+          "id": "3a674417-163d-41d0-ad64-90b9c1e4b8a9",
+          "nombre": "juegos ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "286db895-f3b2-4adf-8885-cceaf814b41b"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "6a7c4222-8e98-4354-a91b-e3924398ec27",
+          "nombre": "t comercio inter ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "ea0b427a-0b92-402e-a78d-92a04a31ce1c",
+            "286db895-f3b2-4adf-8885-cceaf814b41b"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "0ab3697c-c87b-4a37-b963-0f4ae4d8bf56",
+          "nombre": "t polt y monetaria",
+          "tipo": "ninguno",
+          "requisitos": [
+            "7dbb4951-f2fd-4bc9-b846-8befd3cc1762",
+            "ea0b427a-0b92-402e-a78d-92a04a31ce1c"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "e81710e2-c006-4dd9-89f8-432547207e8a",
+          "nombre": "eco polt 2 ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "fddefaca-7bbb-447b-8bd6-279a0389ab81"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "4e46ead5-a9f1-4033-8562-1f15c5630abf",
+          "nombre": "econometria",
+          "tipo": "ninguno",
+          "requisitos": [
+            "286db895-f3b2-4adf-8885-cceaf814b41b",
+            "ea0b427a-0b92-402e-a78d-92a04a31ce1c",
+            "174977cf-ce5e-4e4d-ad2a-553b57539a00"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "b31921fb-9aa0-4587-b53c-6aa67a5552d9",
+          "nombre": "derecho eco ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "7dbb4951-f2fd-4bc9-b846-8befd3cc1762"
+          ],
+          "creditos": 1,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "4310fd15-0acf-4f9a-a6a2-39c29c2ab01e",
+          "nombre": "analisis fi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "e45661f0-7543-43ea-822b-5d589e3b4703"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 4,
+      "periodo": "anual",
+      "materias": []
+    },
+    {
+      "año": 4,
+      "periodo": "Semestre 1",
+      "materias": [
+        {
+          "id": "e36da8e3-d9a4-49f0-a1c3-8afee99dcbf9",
+          "nombre": "org industrial ",
+          "tipo": "ninguno",
+          "requisitos": [
+            "3a674417-163d-41d0-ad64-90b9c1e4b8a9",
+            "b31921fb-9aa0-4587-b53c-6aa67a5552d9"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "f5c703cd-643d-411c-ad8c-df56179ba1a9",
+          "nombre": "eco recursos nat",
+          "tipo": "ninguno",
+          "requisitos": [
+            "e81710e2-c006-4dd9-89f8-432547207e8a",
+            "3a674417-163d-41d0-ad64-90b9c1e4b8a9"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "d325fb56-bfe2-42cb-bb59-87ff41613123",
+          "nombre": "eco monetaria inter",
+          "tipo": "ninguno",
+          "requisitos": [
+            "0ab3697c-c87b-4a37-b963-0f4ae4d8bf56",
+            "6a7c4222-8e98-4354-a91b-e3924398ec27"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "bd26f25f-9f57-43dd-af65-532938731130",
+          "nombre": "econometria 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "4e46ead5-a9f1-4033-8562-1f15c5630abf"
+          ],
+          "creditos": 5,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "93f0f722-95ea-4e3b-8f38-47625beb9d59",
+          "nombre": "investg de mercados",
+          "tipo": "ninguno",
+          "requisitos": [
+            "4310fd15-0acf-4f9a-a6a2-39c29c2ab01e"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "dd867c7d-1e9f-4768-b994-c2425785f241",
+          "nombre": "eco fi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "4310fd15-0acf-4f9a-a6a2-39c29c2ab01e",
+            "3a674417-163d-41d0-ad64-90b9c1e4b8a9"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 4,
+      "periodo": "Semestre 2",
+      "materias": [
+        {
+          "id": "518e2dc9-2c33-40a6-b345-a1320d1a0665",
+          "nombre": "fi publicas",
+          "tipo": "ninguno",
+          "requisitos": [
+            "d325fb56-bfe2-42cb-bb59-87ff41613123",
+            "dd867c7d-1e9f-4768-b994-c2425785f241"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "a192540b-617f-497d-8a53-9e098bd0dcee",
+          "nombre": "creci eco",
+          "tipo": "ninguno",
+          "requisitos": [
+            "d325fb56-bfe2-42cb-bb59-87ff41613123",
+            "e36da8e3-d9a4-49f0-a1c3-8afee99dcbf9"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "627644b9-3744-4429-a5cf-61589d5ffd75",
+          "nombre": "eco distri",
+          "tipo": "ninguno",
+          "requisitos": [
+            "e81710e2-c006-4dd9-89f8-432547207e8a",
+            "f5c703cd-643d-411c-ad8c-df56179ba1a9"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "cf536c85-ef93-4ccc-ac2a-43ecf6edc747",
+          "nombre": "econometria 3",
+          "tipo": "ninguno",
+          "requisitos": [
+            "bd26f25f-9f57-43dd-af65-532938731130",
+            "e36da8e3-d9a4-49f0-a1c3-8afee99dcbf9"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "f416f3fe-cc01-4dc7-bbde-376a5ee686cc",
+          "nombre": "metodo invesg eco",
+          "tipo": "ninguno",
+          "requisitos": [
+            "bd26f25f-9f57-43dd-af65-532938731130",
+            "d325fb56-bfe2-42cb-bb59-87ff41613123"
+          ],
+          "creditos": 2,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "4979c633-2444-4519-b1e7-107f43097d7e",
+          "nombre": "form de proyectos",
+          "tipo": "ninguno",
+          "requisitos": [
+            "93f0f722-95ea-4e3b-8f38-47625beb9d59",
+            "dd867c7d-1e9f-4768-b994-c2425785f241"
+          ],
+          "creditos": 4,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "3c666403-8289-4f09-ad24-c583c33f542c",
+          "nombre": "gerencia fi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "dd867c7d-1e9f-4768-b994-c2425785f241",
+            "93f0f722-95ea-4e3b-8f38-47625beb9d59"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "802b3b4f-7d06-41ec-a247-f188aeb22575",
+          "nombre": "plan estrag",
+          "tipo": "ninguno",
+          "requisitos": [
+            "f5c703cd-643d-411c-ad8c-df56179ba1a9",
+            "e36da8e3-d9a4-49f0-a1c3-8afee99dcbf9"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 5,
+      "periodo": "anual",
+      "materias": []
+    },
+    {
+      "año": 5,
+      "periodo": "Semestre 1",
+      "materias": [
+        {
+          "id": "43e03db6-ff12-4039-8f7f-50d901c551f6",
+          "nombre": "desarrollo eco",
+          "tipo": "ninguno",
+          "requisitos": [
+            "a192540b-617f-497d-8a53-9e098bd0dcee"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "315a8eff-23e3-4e5b-b580-042fe23a55bd",
+          "nombre": "eco post keynes",
+          "tipo": "ninguno",
+          "requisitos": [
+            "627644b9-3744-4429-a5cf-61589d5ffd75",
+            "518e2dc9-2c33-40a6-b345-a1320d1a0665"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "0996965b-5f4f-4379-b8e4-6a411c362b34",
+          "nombre": "tesis 1",
+          "tipo": "ninguno",
+          "requisitos": [
+            "cf536c85-ef93-4ccc-ac2a-43ecf6edc747",
+            "f416f3fe-cc01-4dc7-bbde-376a5ee686cc"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "f5eac8d8-b78d-49c0-8cf4-52dfa543ee78",
+          "nombre": "form proy soci",
+          "tipo": "ninguno",
+          "requisitos": [
+            "4979c633-2444-4519-b1e7-107f43097d7e",
+            "a192540b-617f-497d-8a53-9e098bd0dcee"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "c6aad25c-6081-4c6e-8015-98dfa6ab53ce",
+          "nombre": "derivados finan",
+          "tipo": "ninguno",
+          "requisitos": [
+            "3c666403-8289-4f09-ad24-c583c33f542c",
+            "802b3b4f-7d06-41ec-a247-f188aeb22575"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "c04f9fcd-5fe5-46c5-aaaf-8453079a1681",
+          "nombre": "practicas",
+          "tipo": "ninguno",
+          "requisitos": [],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    },
+    {
+      "año": 5,
+      "periodo": "Semestre 2",
+      "materias": [
+        {
+          "id": "c2042f10-b4cd-444d-8c2d-0a7ffbffc933",
+          "nombre": "regulacion eco",
+          "tipo": "ninguno",
+          "requisitos": [
+            "43e03db6-ff12-4039-8f7f-50d901c551f6",
+            "315a8eff-23e3-4e5b-b580-042fe23a55bd"
+          ],
+          "creditos": 0,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "f23b3f5c-cfa7-4375-92de-20e8b55b40ee",
+          "nombre": "polt y prog fi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "518e2dc9-2c33-40a6-b345-a1320d1a0665",
+            "43e03db6-ff12-4039-8f7f-50d901c551f6"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "fc02c39e-6435-4260-a8f5-ee643380840e",
+          "nombre": "polt eco",
+          "tipo": "ninguno",
+          "requisitos": [
+            "43e03db6-ff12-4039-8f7f-50d901c551f6",
+            "f5eac8d8-b78d-49c0-8cf4-52dfa543ee78"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "b3d9dd50-2108-49a4-90de-53d7ab021735",
+          "nombre": "tesis 2",
+          "tipo": "ninguno",
+          "requisitos": [
+            "0996965b-5f4f-4379-b8e4-6a411c362b34"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "ace8d896-a055-4a76-b7b3-5c10583556ed",
+          "nombre": "fi corp",
+          "tipo": "ninguno",
+          "requisitos": [
+            "c6aad25c-6081-4c6e-8015-98dfa6ab53ce"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        },
+        {
+          "id": "4f0dc19c-1ea9-4773-ae0b-d073f62dfaf7",
+          "nombre": "mercados fi",
+          "tipo": "ninguno",
+          "requisitos": [
+            "c6aad25c-6081-4c6e-8015-98dfa6ab53ce"
+          ],
+          "creditos": 3,
+          "requiereCreditos": 0
+        }
+      ]
+    }
+  ],
+  "estructuraPorAnio": [
+    {
+      "tipo": "semestral",
+      "periodos": [
+        "Semestre 1",
+        "Semestre 2"
+      ]
+    },
+    {
+      "tipo": "semestral",
+      "periodos": [
+        "Semestre 1",
+        "Semestre 2"
+      ]
+    },
+    {
+      "tipo": "semestral",
+      "periodos": [
+        "Semestre 1",
+        "Semestre 2"
+      ]
+    },
+    {
+      "tipo": "semestral",
+      "periodos": [
+        "Semestre 1",
+        "Semestre 2"
+      ]
+    },
+    {
+      "tipo": "semestral",
+      "periodos": [
+        "Semestre 1",
+        "Semestre 2"
+      ]
+    }
+  ],
+  "cantidadAnios": 5
+}
